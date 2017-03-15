@@ -84,7 +84,7 @@ EOF;
         echo $imgurl, "\n";
         $pathinfo = pathinfo($imgurl);
 
-        $imgfile = $imgdir . '/' . date('YmdHis') . $pathinfo['extension'];
+        $imgfile = $imgdir . '/' . date('YmdHis') .'.'. $pathinfo['extension'];
         return file_put_contents($imgfile, file_get_contents($imgurl));
     }
 
