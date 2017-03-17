@@ -175,7 +175,6 @@ EOF;
     }
 }
 
-//http://www.meizitu.com/
 
 $imgspider = new DivIdSpider();
 $imgspider->run();
